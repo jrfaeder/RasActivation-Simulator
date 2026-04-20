@@ -7,12 +7,14 @@ begin model
 begin parameters
 
     RhoSOS  1             # SOS  concentration (nM)
-    RhoLAT  500           # LAT surface density (molecules/µm²)
+    RhoLAT  800           # LAT surface density (molecules/µm²)#500 is low ,  2500 is v high
 
     # SOS-LAT recruitment
     # Higher RhoLAT = more SOS gets recruited = more Ras activation
-    Kon_LAT   1e-4        # SOS binding to LAT (µm2/s)
-    Koff_LAT  1e-3        # SOS unbinding LAT , what's controlling processivity now 
+    Kon_LAT   3e-3       # SOS binding to LAT (µm2/s), Fig 3E 
+    Koff_LAT  0.016        # 1/62  SOS unbinding LAT , what's controlling processivity now  , Fig 2 ??
+                                # low LAT density Koff_LAT = 10  
+                                # they measure dwell time of monovalent Grb2-pLAT SOS 
                           
 
     # SOS-Ras binding (same but now only SOS bound to LAT can bind Ras)

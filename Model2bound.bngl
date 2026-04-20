@@ -1,4 +1,4 @@
-# MODEL 2 
+# MODEL 2 BOUND 
 
 # Ras-SOS Activation Model 2 
 # altered parameters for multimodality 
@@ -32,7 +32,7 @@ begin molecule types
 end molecule types
 
 begin species
-    Ras(sos,a~0) RasTotal    # Initial RasGDP molecules
+    Ras(sos,a~0) RasTotal - initialBoundSOS    # Initial RasGDP molecules
     Ras(sos!1,a~0).Sos(ras!1) initialBoundSOS
 end species
 
