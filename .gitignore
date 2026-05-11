@@ -6,3 +6,6 @@ Model*/**/*.net
 Model*/**/*.log
 *.pkl
 *_sbml.xml
+
+# Manuscript files (for now)
+Manuscript/
